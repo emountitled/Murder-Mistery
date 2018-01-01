@@ -1,0 +1,7 @@
+
+
+<block wx:for="{{scriptData.players}}" wx:for-item="item">
+  <view catchtap='player_detail' data-script_id="{{scriptData.script_id}}" data-player_id='{{item.player_id}}'>
+    <button>{{item.player_name}}</button>
+  </view>
+</block>

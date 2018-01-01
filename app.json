@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/scripts/scripts",
+    "pages/script_detail/script_detail",
+    "pages/choose_player/choose_player",
+    "pages/player_detail/player_detail",
+    "pages/clues/clues",
+    "pages/memery/memery",
+    "pages/tutorial/tutorial"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor":"#eee",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "谋杀之谜",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/scripts/scripts",
+      "text": "选择",
+      "iconPath": "/pic/tab/yuedu.png",
+      "selectedIconPath": "/pic/tab/yuedu_hl.png"
+    }
+    
+    ,
+    {
+      "pagePath": "pages/player_detail/player_detail",
+      "text": "人物"
+      
+    },
+    
+    {
+      "pagePath": "pages/tutorial/tutorial",
+      "text": "任务"
+    },
+    {
+      "pagePath":"pages/clues/clues",
+      "text":"发现"
+    },
+    {
+      "pagePath": "pages/memery/memery",
+      "text": "记忆"
+    }
+  ]
+  }
+  
+}

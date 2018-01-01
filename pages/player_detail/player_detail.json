@@ -1,0 +1,21 @@
+{
+  "tabBar": {
+    "list": [
+	
+	{
+      "pagePath": "pages/player_detail/player_detail",
+      "text": "text",
+      "iconPath": "/pic/tab/yuedu.png",
+      "selectedIconPath": "/pic/tab/yuedu_hl.png"
+    },
+	{
+      "pagePath":"pages/clues/clues",
+      "text":"线索",
+      "inconPath":"/pic/tab/dianying_hl.png",
+      "selectedIconPath":"pic/tab/dianying_hl.png"
+    }
+    
+    ]
+  }
+  
+}

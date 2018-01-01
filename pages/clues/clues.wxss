@@ -1,0 +1,12 @@
+/* pages/clues/clues.wxss */
+
+.clue-title{
+    margin-bottom: 16rpx;
+    font-size: 40rpx;
+}
+
+.clue-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}

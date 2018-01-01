@@ -1,0 +1,37 @@
+<!--pages/tutorial/tutorual.wxml-->
+
+<view>
+  <text class='title'>你的物品</text>
+  <block wx:for="{{playerData.item}}">
+    <view>
+      <text class='post-content'>{{item}}</text>
+    </view>
+  </block>
+</view>
+
+<view>
+<text class='title'>你不能透露的事情</text>
+  <block wx:for="{{playerData.secrets}}">
+    <view>
+      <text class='post-content'>{{item}}</text>
+    </view>
+  </block>
+</view>
+
+<view>
+<text class='title'>你必须公开的事情</text>
+  <block wx:for="{{playerData.public}}">
+    <view>
+      <text class='post-content'>{{item}}</text>
+    </view>
+  </block>
+</view>
+
+<view>
+<text class='title'>你的任务</text>
+<block wx:for="{{playerData.objective}}">
+   <view>
+   <text class='post-content'>{{item}}</text>
+   </view>
+</block>
+</view>

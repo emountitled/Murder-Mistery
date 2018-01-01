@@ -1,0 +1,10 @@
+<!--pages/script_detail/script_detail.wxml-->
+<!-- <block wx:for="{{scriptData}}" wx:for-item="item" wx:for-index="idx">
+  <text>{{item.background}}</text>
+</block> -->
+<image class="head-img" src="{{scriptData.theme_pic}}" mode="aspectFill" />
+<text class="post-content">{{scriptData.background}}</text>
+
+<view catchtap="choose_player" data-script_id="{{scriptData.script_id}}">
+  <button  type='warn'>选择角色</button>
+</view>

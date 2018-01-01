@@ -1,0 +1,21 @@
+<!--pages/scripts/scripts.wxml-->
+<swiper vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
+  <swiper-item>
+    <image src='/pic/1.png'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='/pic/2.png'></image>
+  </swiper-item>
+</swiper>
+
+
+<view class="post-container">
+<block wx:for="{{scriptList}}" wx:for-item="item" wx:for-index="idx">
+  <view catchtap='enter_detail' data-script_id="{{item.script_id}}">
+    <text class="post-title">{{item.script_name}}</text>
+    <image class="post-image" src='{{item.theme_pic}}'></image>
+    <text class="post-content">{{item.script_type}}</text>
+    <text class="post-content">{{item.player_num}}人</text>
+  </view>
+</block>
+</view>

@@ -1,0 +1,5 @@
+<text class='title'>你的故事 </text>
+
+  <button type='primary' size='mini' class="wa-button wa-button-sm" catchtap='start'>任务</button>
+
+<text class="post-content">{{playerData.player_info}}</text>

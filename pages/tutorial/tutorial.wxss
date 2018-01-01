@@ -1,0 +1,10 @@
+/* pages/tutorial/tutorual.wxss */
+
+.post-content{
+    color:#666;
+    font-size:28rpx;
+    margin-bottom:20rpx;
+    margin-left: 20rpx;
+    letter-spacing:2rpx;
+    line-height: 40rpx;
+}

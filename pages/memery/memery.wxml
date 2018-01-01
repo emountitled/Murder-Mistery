@@ -1,0 +1,14 @@
+<!--pages/memery/memery.wxml-->
+<button catchtap='clear_memery'>清除记忆</button>
+<view class='wa-list'>
+  <block wx:for="{{memery}}">
+  <view class='wa-item'>
+    
+      <text class="title">{{item.clue_type}}</text>
+    
+    
+      <text>{{item.clue_info}}</text>
+    
+    </view>
+  </block>
+</view>

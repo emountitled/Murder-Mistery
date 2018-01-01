@@ -1,0 +1,21 @@
+<!--pages/clues/clues.wxml-->
+
+
+<view>
+  <view>
+    <block wx:for="{{clueData}}">
+      <view>
+        <view>
+          <text class="title">{{item.clue_name}}</text>
+        </view>
+        <block wx:for="{{item.clue_detail}}" wx:for-item="item1">
+          <button size="mini" catchtap='get_clue' data-clue_id-='{{item1.clue_id}}' data-clue_info='{{item1.clue_info}}' data-clue_type='{{item1.clue_type}}'>
+            线索{{item1.clue_id+1}}
+          </button>
+        </block>
+      </view>
+
+
+    </block>
+  </view>
+</view>
