@@ -1,21 +1,52 @@
 <!--pages/scripts/scripts.wxml-->
+
+<view>
+<image src='/pic/tmp_logo.png' class='wel-image'></image>
+</view>
+
 <swiper vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
   <swiper-item>
-    <image src='/pic/1.png'></image>
+    <image src='/pic/1.png' model="scaleToFill"></image>
   </swiper-item>
   <swiper-item>
-    <image src='/pic/2.png'></image>
+    <image src='/pic/2.png' model="scaleToFill"></image>
   </swiper-item>
 </swiper>
 
 
-<view class="post-container">
+<view>
 <block wx:for="{{scriptList}}" wx:for-item="item" wx:for-index="idx">
-  <view catchtap='enter_detail' data-script_id="{{item.script_id}}">
-    <text class="post-title">{{item.script_name}}</text>
-    <image class="post-image" src='{{item.theme_pic}}'></image>
-    <text class="post-content">{{item.script_type}}</text>
-    <text class="post-content">{{item.player_num}}人</text>
+<view class="zan-card" catchtap='enter_detail' data-script_id="{{item.script_id}}">
+  <!-- 卡片左侧商品图片 -->
+  <view class="zan-card__thumb">
+    <image class="zan-card__img"
+      src='{{item.theme_pic}}'
+      mode="aspectFit"
+    ></image>
   </view>
+  <!-- 卡片右侧详情描述 -->
+  <view class="zan-card__detail">
+    <!-- 商品标题行 -->
+    <!-- 每行可以使用 zan-card__detail-row 来控制展示区域 -->
+    <!-- 每行里面可以用 zan-card__left-col zan-card__right-col 来控制左右展示 -->
+    <view class="zan-card__detail-row">
+      <view class="zan-card__right-col"></view>
+      <view class="zan-card__left-col zan-ellipsis--l2">
+         
+      </view>
+    </view>
+    <!-- 商品附属信息展示行 -->
+    <view class="zan-card__detail-row zan-c-gray-darker">
+      <view class="zan-card__right-col">{{item.player_num}}人</view>
+      <view class="zan-card__left-col">
+        {{item.script_name}}
+      </view>
+    </view>
+    <!-- 商品操作按钮相关 -->
+    <view class="zan-card__detail-row zan-c-gray-darker">
+      <view class="zan-card__left-col zan-c-red">{{item.script_type}}</view>
+    </view>
+  </view>
+</view>
 </block>
 </view>
